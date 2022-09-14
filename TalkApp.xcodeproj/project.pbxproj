@@ -13,6 +13,10 @@
 		4295B87928D15F7B0033708F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4295B87728D15F7B0033708F /* Main.storyboard */; };
 		4295B87B28D15F7C0033708F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4295B87A28D15F7C0033708F /* Assets.xcassets */; };
 		4295B87E28D15F7C0033708F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4295B87C28D15F7C0033708F /* LaunchScreen.storyboard */; };
+		4295B88628D160360033708F /* BoyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B88528D160360033708F /* BoyTableViewCell.swift */; };
+		4295B88A28D161350033708F /* GirlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B88928D161350033708F /* GirlTableViewCell.swift */; };
+		4295B88C28D1619C0033708F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B88B28D1619C0033708F /* ChatViewController.swift */; };
+		4295B88F28D162630033708F /* LyricsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295B88E28D162630033708F /* LyricsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		4295B87A28D15F7C0033708F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4295B87D28D15F7C0033708F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4295B87F28D15F7C0033708F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4295B88528D160360033708F /* BoyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyTableViewCell.swift; sourceTree = "<group>"; };
+		4295B88928D161350033708F /* GirlTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlTableViewCell.swift; sourceTree = "<group>"; };
+		4295B88B28D1619C0033708F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = Controller/ChatViewController.swift; sourceTree = SOURCE_ROOT; };
+		4295B88E28D162630033708F /* LyricsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,9 @@
 		4295B86528D15F7B0033708F = {
 			isa = PBXGroup;
 			children = (
+				4295B88728D1603D0033708F /* Model */,
+				4295B88828D1604E0033708F /* View */,
+				4295B88D28D161A20033708F /* Controller */,
 				4295B87028D15F7B0033708F /* TalkApp */,
 				4295B86F28D15F7B0033708F /* Products */,
 			);
@@ -65,6 +76,31 @@
 				4295B87F28D15F7C0033708F /* Info.plist */,
 			);
 			path = TalkApp;
+			sourceTree = "<group>";
+		};
+		4295B88728D1603D0033708F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4295B88E28D162630033708F /* LyricsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4295B88828D1604E0033708F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4295B88528D160360033708F /* BoyTableViewCell.swift */,
+				4295B88928D161350033708F /* GirlTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4295B88D28D161A20033708F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4295B88B28D1619C0033708F /* ChatViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4295B88F28D162630033708F /* LyricsModel.swift in Sources */,
 				4295B87628D15F7B0033708F /* ViewController.swift in Sources */,
 				4295B87228D15F7B0033708F /* AppDelegate.swift in Sources */,
+				4295B88628D160360033708F /* BoyTableViewCell.swift in Sources */,
+				4295B88A28D161350033708F /* GirlTableViewCell.swift in Sources */,
+				4295B88C28D1619C0033708F /* ChatViewController.swift in Sources */,
 				4295B87428D15F7B0033708F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +334,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +362,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
